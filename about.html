@@ -1,0 +1,151 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/design2.css">
+<link rel="icon" href="images/favicon2.png" type="image" sizes="16x10">
+</head>
+<body>
+<style>
+
+th, td {
+    padding: 100px;
+}
+.justify{
+text-align: justify;
+text-justify: inter-word;
+}
+.absolute {
+  position: absolute;
+  top: 300px;
+  right: 300px;
+  width: 800px;
+  height: 200px;
+}
+</style>
+<!--navBar-->
+<ul class="topnav">
+
+  <li><a  href="index.html"><img src="images/logo.jpg" height="48px" width="150px"></a></li>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="menu.html">MENU</a></li>
+  <li><a href="#about">ABOUT</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+  <li class="right"><a href="#login">
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+  LOGIN</button></a></li>
+  
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+  <li class="right"><a href="#about">SIGNUP</a></li>
+</ul>
+<body>
+<br><br><br><br><br>
+<center><h1>About Us</h1></center>
+<hr>
+<br><br><br><br><br>
+<div class = "absolute">
+<div class= "justify">
+The business started when a group of individual student of FEU Institute of Technology met in an event near Lacson called, "The Troika".
+The students became friends because of their common interest, which are programming and eating corn. The students decided to create a 
+physical restaurant that offers good quality and tastes of a different food with corn recipes for catering. 
+As the days goes by the number of clients are getting high so the students wanted their catering restaurant to be known 
+in other places and decided to develop 
+a website for an easy transaction with their clients.
+</div>
+</div>
+<tr>
+<br><br><br><br><br>
+<center><h1>
+Profile
+</h1></center>
+
+<center>
+<table>
+
+<tr>
+<td><image src="images/jayson.jpg" width="300px" height="300px"><br><br>
+<center><p><b>Laurente, Jayson</b><br>
+BirthDate<br>
+Information Technology with<br> 
+specialization in digital arts<br>
+Graphic artist and headturner<br></p>
+</td>
+</center>
+
+
+<td><image src="images/isidro.png" width="300px" height="300px"><br><br>
+<center>
+<p><b>Isidro, Christoper</b><br>
+BirthDate: <br>
+Computer Science <br>
+Specialize in software engineering<br>
+Programmer and long hair
+</p>
+</td>
+</center>
+</tr>
+
+<tr>
+<td><image src="images/angelo.jpg" width="300px" height="300px"><br><br>
+<center><p><b>Repollo, Angelo</b><br>
+Birthday:<br>
+Information Technology with<br>
+specialization in digital arts<br>
+Programmer and handsome<br></p></center></td>
+
+
+<td><image src="images/jhance.jpg" width="300px" height="300px"><br><br>
+<center><p><b>Laya, Jhance Bredh</b><br>
+Birthday:<br>
+Computer Science <br>
+Specialize in software engineering<br>
+Programmer, developer and guitarist<br>
+</p></center>
+</td>
+<tr>
+
+</table>
+</center>
+
+</body>

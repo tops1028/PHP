@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+  <link rel="stylesheet" href="css/design.css">
+<link rel="icon" href="images/favicon2.png" type="image" sizes="16x10">
+</head>
+<body bgcolor=#191919>
+
+
+
+<ul class="topnav">
+
+    <li><a  href="index.html"><img src="images/logo.jpg" height="48px" width="150px"></a></li>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="menu.html">MENU</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+  <li class="right"><a href="#login">
+  <li class="right"><a href="#login">
+  
+  
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+  LOGIN</button></a></li>
+  
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+  <li class="right"><a href="#about">SIGNUP</a></li>
+</ul>
+</div>
+
+
+<div style="padding:0 16px;">
+<img src="images/corn.jpg" alt="Corn Image" style="width:100%;height:657px;">
+</div>
+
+
+
+</body>
+</html>
